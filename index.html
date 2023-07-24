@@ -4,8 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal solution</title>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- daisy ui link -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- icon link -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+ <style>
+     .font-style{
+   
+    font-family: 'Poppins', sans-serif;
+  }
+  .font-style2{
+    font-family: 'EB Garamond', serif;
+  }
+ </style>
+ 
 </head>
 <body>
-    
+     <header class="md:container md:mx-auto py-12">
+       <nav>
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a> Services</a></li>
+                  <li><a>Cases</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <img src="images/logo2.png" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a> Services</a></li>
+                <li><a>Cases</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
+            </div>
+          </div>
+       </nav>
+     </header>
+     <main>
+       <section class="py-8">
+        <div class="hero min-h-screen" style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-4xl font-bold font-style2">We Provide Effective Legal Solutions</h1>
+                <p class="mb-5 font-style text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="">
+                    <input class=" h-10 mr-2 text-sm" type="email" placeholder="Search your services">
+                    <button class="btn bg-[#B68C5A] text-white border-none">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+       </section>
+       
+       <section class="py-8">
+        <div class="text-center font-style2">
+            <h2 class="text-5xl font-bold">The Legal Practice Area</h2>
+        <p class="mt-4">There are many variations of passages of Lorem Ipsum available, but the majority have <br>suffered alteration in some form, by injected humour.</p>
+        </div>
+
+        <div class="flex gap-10 flex-col lg:flex-row mt-10 ">
+            <div class="px-12 border  h-80 rounded-xl ml-20">
+                <img class="ml-10" src="images/business.png" alt="">
+                <h2 class="text-xl font-bold mt-5 ml-10">Business Law</h2>
+                <p class="mt-4 font-style text-sm text-center">There are many variations of <br>passages of Lorem Ipsum <br>available, but the majority have <br>suffered alteration in some <br>form, by injected humour.</p>
+                <i><img class="mt-5 ml-10" src="images/Frame.png" alt=""></i>
+            </div>
+            <div class="px-12 border  h-80 rounded-lg ml-20">
+                <img class="ml-10" src="images/criminal.png" alt="">
+                <h2 class="text-xl font-bold mt-5 ml-10">Business Law</h2>
+                <p class="mt-4 font-style text-sm text-center">There are many variations of <br>passages of Lorem Ipsum <br>available, but the majority have <br>suffered alteration in some <br>form, by injected humour.</p>
+                <i><img class="mt-5 ml-10" src="images/Frame.png" alt=""></i>
+            </div>
+            <div class="px-12 border  h-80 rounded-lg ml-20">
+                <img class="ml-10" src="images/child.png" alt="">
+                <h2 class="text-xl font-bold mt-5 ml-10">Business Law</h2>
+                <p class="mt-4 font-style text-sm text-center">There are many variations of <br>passages of Lorem Ipsum <br>available, but the majority have <br>suffered alteration in some <br>form, by injected humour.</p>
+                <i><img class="mt-5 ml-10" src="images/Frame.png" alt=""></i>
+            </div>
+        </div>
+       </section>
+     </main>
+     <footer>
+
+     </footer>
+
 </body>
 </html>
